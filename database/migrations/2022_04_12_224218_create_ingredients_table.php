@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->unsignedDecimal('stock');
-            $table->unsignedDecimal('alert_level');
+            $table->unsignedDecimal('low_stock_amount');
             $table->boolean('alert_email_sent')->default(false);
             $table->string('unit');
             $table->timestamps();

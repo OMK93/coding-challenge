@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('slug');
             $table->text('description');
             $table->unsignedDecimal('price');
-            $table->string('image');
+            $table->string('image_path');
             $table->timestamps();
         });
     }
