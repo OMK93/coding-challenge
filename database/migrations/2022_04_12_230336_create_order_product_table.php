@@ -18,6 +18,8 @@ return new class extends Migration
             $table->foreignId('order_id');
             $table->foreignId('product_id');
             $table->integer('qty');
+            $table->unsignedDecimal('price');
+            $table->unsignedDecimal('line_total');
             $table->timestamps();
         });
     }

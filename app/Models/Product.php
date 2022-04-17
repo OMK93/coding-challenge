@@ -20,7 +20,7 @@ class Product extends Model
 
     public function ingredients()
     {
-        return $this->belongsToMany(Ingredient::class)->withTimestamps();
+        return $this->belongsToMany(Ingredient::class)->withPivot('qty')->withTimestamps();
     }
 
     public function orders()

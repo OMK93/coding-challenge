@@ -1,4 +1,6 @@
 import { createStore } from 'vuex';
+import createPersistedState from "vuex-persistedstate";
+import order from './modules/order';
 
 export default createStore({
     state: {
@@ -8,5 +10,7 @@ export default createStore({
     actions: {
     },
     modules: {
-    }
+        order
+    },
+    plugins: [createPersistedState()]
 });
